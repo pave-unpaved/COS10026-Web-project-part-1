@@ -2,12 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content= TODO >
-    <meta name="keywords" content= TODO >
-    <meta name="author" content= TODO >
+    <meta name="description" content="Apply to work with us.">
+    <meta name="keywords" content="apply, job, application, form, submit, work">
+    <meta name="author" content="Ophelia Harris">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO</title>
-
+    <title>Application form - Co.Org.E</title>
     <link rel="stylesheet" href="styles/global_stylesheet.css">
+    <style> 
+      /* this will only be used on this page in very specific contexts, and so is a prime candidate for embedding */
+      .mandatory_marker {
+        color: #c10505;
+      }
+    </style>
   </head>
+
+  <body>
+    <header>
+      <h1>Co.Org.E</h1>
+      <nav class="todo">
+        TODO - Nav cluster
+      </nav>
+    </header>
+    <main>
+      <h2>
+        Apply to work with us!
+      </h2>
+      <p>
+        Mandatory fields marked with (<span class="mandatory_marker">*</span>)
+      </p>
+      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post"> <!-- Trying to do a logical grouping of elements into fieldsets with this -->
+        <fieldset> <!-- Job reference number -->
+          <legend>Job Reference Number</legend>
+          <label for="reference_number">Reference Number <span class="mandatory_marker">*</span></label>
+          <input type="text" id="reference_number" name="reference_number" minlength="5" maxlength="5" pattern="[a-zA-Z0-9]*" placeholder="XX123" required>
+        </fieldset>
+        <fieldset> <!-- Applicant Info -->
+          <legend>Applicant Information</legend>
+          <p>
+            <label for="given_name">Given Name <span class="mandatory_marker">*</span> </label>
+            <input type="text" id="given_name" name="given_name" minlength="1" maxlength="20" pattern="[a-zA-Z]*" required>
+          </p>
+          <p>
+            <label for="family_name">Family Name <span class="mandatory_marker">*</span> </label>
+            <input type="text" id="family_name" name="family_name" minlength="1" maxlength="20" pattern="[a-zA-Z-]*" required> <!-- The different selector allows for double-barreled last names -->
+          </p>
+          <p>
+            <label for="date_of_birth">Date of Birth <span class="mandatory_marker">*</span> </label>
+            <input type="text" id="date_of_birth" name="date_of_birth" pattern="\d{1,2}\/\d{1,2}\/\d{2,4}" placeholder="dd/mm/yyyy" required>
+          </p>
+          <fieldset> <!-- I don't love the fieldset in a fieldset but it works and I don't want to have gender in a separate category -->
+            <legend>Gender <span class="mandatory_marker">*</span></legend>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+          </fieldset>
+        </fieldset>
+        <fieldset> <!-- Applicant address -->
+          <legend>Address Information</legend>
+          <p>
+            <label for="address">Address <span class="mandatory_marker">*</span></label>
+            <input type="text" id="address" name="address" maxlength="40" pattern="[a-zA-Z0-9]*" placeholder="1 Workshop Drive" required>
+          </p>
+          <p>
+            <label for="suburb">Suburb or Town <span class="mandatory_marker">*</span></label>
+            <input type="text" id="suburb" name="suburb" maxlength="40" pattern="[a-zA-Z0-9]*" placeholder="North Pole" required>
+          </p>
+          <p>
+            <label for="state">State or Territory <span class="mandatory_marker">*</span></label>
+            <select id="state" name="state" required>
+              <option value="">Please Select</option>
+              <option value="VIC">VIC</option>
+              <option value="NSW">NSW</option>
+              <option value="QLD">QLD</option>
+              <option value="SA">SA</option>
+              <option value="WA">WA</option>
+              <option value="TAS">TAS</option>
+              <option value="NT">NT</option>
+              <option value="ACT">ACT</option>
+            </select>
+          </p>
+          <p>
+            <label for="postcode">Postcode <span class="mandatory_marker">*</span></label>
+            <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9][0-9][0-9][0-9]" placeholder="9999" required>
+          </p>
+        </fieldset>
+        <fieldset> <!-- Contact Information-->
+          <legend>Contact Information</legend>
+          <p>
+            <label for="email">Email <span class="mandatory_marker">*</span></label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="mrs.claus@northpolegifts.org" required>
+          </p>
+          <p>
+            <label for="phone_number">Phone Number <span class="mandatory_marker">*</span></label>
+            <input type="text" id="phone_number" name="phone_number" minlength="8" maxlength="12" required>
+          </p>
+        </fieldset>
+        <fieldset> <!-- Skills -->
+          <legend>Skills</legend>
+          Select at least one <span class="mandatory_marker">*</span>
+          <p>
+            <input type="checkbox" id="web_dev" name="web_dev" value="true" checked>
+            <label for="web_dev">Web Development in HTML, CSS and Javascript</label>
+          </p>
+          <p>
+            <input type="checkbox" id="php" name="php" value="true">
+            <label for="php">Proficiency in PHP</label>
+          </p>
+          <p>
+            <input type="checkbox" id="sysadmin_windows" name="sysadmin_windows" value="true">
+            <label for="sysadmin_windows">Windows System Administration</label>
+          </p>
+          <p>            
+            <input type="checkbox" id="sysadmin_linux" name="sysadmin_linux" value="true">
+            <label for="sysadmin_linux">Linux System Administration</label>
+          </p>
+          <p>
+            <input type="checkbox" id="networking" name="networking" value="true">
+            <label for="networking">Network Engineering or Administration</label>
+          </p>
+          <p>
+            <input type="checkbox" id="software_dev" name="software_dev" value="true">
+            <label for="software_dev">Software Development in Java, C#, C++ or Python</label>
+          </p> 
+          <p>
+            <input type="checkbox" id="jira" name="jira" value="true">
+            <label for="jira">Jira for project management</label>
+          </p>
+          <p>
+            <input type="checkbox" id="office" name="office" value="true">
+            <label for="office">Microsoft Office and Outlook</label>
+          </p> 
+          <p>
+            <label for="other_skills">Other Skills (Optional)</label>
+          </p>
+          <p>
+            <textarea id="other_skills" rows="5" cols="80">Teamwork, Communication, Drive, High energy particle physics, Brain Surgery</textarea>
+          </p>
+        </fieldset>
+        <input type="reset" value="Reset Form" style="color: red"> <!-- Using color-coding to help guide the user's eye to the correct option -->
+        <input type="submit" value="Submit Application" style="color:green"> 
+      </form>
+    </main>
+    <footer>
+      <p class="todo">
+        TODO - common footer
+      </p>
+    </footer>
+  </body>
 </html>

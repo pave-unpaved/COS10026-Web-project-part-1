@@ -11,3 +11,12 @@ Last modified: 27/03/2026
 description: Co.Org.E Global styles
 
 */
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todo {
+  background-color: red;
+  color: white;
+}

@@ -20,3 +20,8 @@ description: Co.Org.E Global stylesheet
   background-color: red;
   color: white;
 }
+
+#current_page_nav {
+  background-color: blue;
+  color: white;
+}

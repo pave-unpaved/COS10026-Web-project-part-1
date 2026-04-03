@@ -25,3 +25,9 @@ description: Co.Org.E Global stylesheet
   background-color: blue;
   color: white;
 }
+
+about_html
+
+.box {
+  border-top: 5px solid grey;
+  }

@@ -1,0 +1,87 @@
+/*
+
+filename: jobs_styles.css
+
+author: Ophelia Harris
+
+created: 7/04/2026
+
+Last modified: 7/04/2026
+
+description: Co.Org.E Global stylesheet
+
+*/
+
+/* in progress theme switch and branding tests 
+:root {
+  --text: black;
+  --background: white;
+  --accent: #5dbaec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: white;
+    --background: #1f3745;
+    --accent: #4f9ac3;
+  }
+}
+
+body {
+  margin: 0 0 1em 0;
+  color: var(--text);
+  background-color: var(--background);
+}
+h1 {
+  margin: 0;
+  padding: 4px;
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--accent), var(--background));
+  margin: 0;
+}
+*/
+
+/* Set the entire content of the page to be centred and 40em wide for comfy reading */
+main {
+  display: flexbox;
+  max-width: 40em;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;  
+}
+
+/* Form styled with grid */
+fieldset {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: flex-start;
+  width: 100%;
+  legend {
+    font-weight: 700;
+  }
+  input[type=email] { /* Stop Chrome-based browsers rendering the email input too small */
+    max-width: fit-content;
+    field-sizing: content;
+  }
+  .gender { /* Make the gender selection inline */
+    margin: 0;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .other { /* make the other skills box extend across the entire bottow row. */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  textarea {
+    width: 30em;
+  }
+}
+.job_reference_number { /* taking this out of the grid required a selector with higher priority than the fieldset above */
+    display: inline;
+    margin: 0 auto;
+}
+

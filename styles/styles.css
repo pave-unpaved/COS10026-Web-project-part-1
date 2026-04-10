@@ -11,10 +11,26 @@ Last modified: 31/03/2026
 description: Co.Org.E Global stylesheet
 
 */
-
 /* GFonts import for that awesome branding 
    I could have also done this in the HTML header but that's much less portable */
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Zen+Dots&display=swap');
+
+:root {
+  --text: #fbfbf4;
+  --background: #15001a;
+  --textlight: #f5e3d6;
+  --accent: #a5cbd9;
+}
+
+
+/* Changing text */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent);
+}
+body {
+  color: var(--text);
+  background: linear-gradient(var(--background), var(--accent));
+} 
 h1 {
   font-family: "Zen Dots", sans-serif;
   font-weight: 700;
@@ -37,20 +53,24 @@ h3, h4 {
 }
 
 
+
 /* Nav cluster styling using flex */
 nav {
+  background-color: var(--accent);
+  color: var(--background);
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  padding: .5%;
 
  .nav_left {
     margin-right: 2em;
 
     a {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
+      margin: 0.5em;
     }
   } 
+
   form {
     margin-left: auto;
     justify-content: flex-end;
@@ -59,12 +79,24 @@ nav {
       min-width: 40em;
     }
   }
+
+  #current_page_nav {
+    background-color: var(--background);
+    color: var(--text);
+  }
 }
 
-#current_page_nav {
-  background-color: blue;
-  color: white;
+
+footer {
+  background-color: var(--accent);
+  color: var(--text);
 }
+
+table {
+  max-width: 100%;
+}
+
+
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
 @-moz-document url-prefix() {
@@ -73,6 +105,7 @@ nav {
     max-width: 38.5%;
   }
 } 
+
 
 /* Common TODO class */
 .todo {
@@ -84,4 +117,4 @@ nav {
 /* about.html */
 .box {
   border-top: 5px solid grey;
-  }
+}

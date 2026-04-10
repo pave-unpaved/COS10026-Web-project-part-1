@@ -6,7 +6,14 @@
     <meta name="keywords" content= TODO >
     <meta name="author" content= TODO >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO</title>
+    <title>Home</title>
+
+    <style>
+      table, th, td {
+        border-style: solid;
+        border-width: 2;
+      }
+    </style>
 
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -14,34 +21,36 @@
   <body>
     
     <!--Company logo, name, slogan, description, and image-->
-    <header>
-      
-      <img src="images/corgi.jpg" alt="company logo, name, image"> 
+    <header style="background-image: url(images/VaporwaveBackground.jpg); background-repeat: no-repeat; background-size: cover;">
+
       <h1>E-Tron</h1>
 
       <h4>
         No Need to Cut in Line for these Cutting Edge Deals
       </h4>
 
-      <hr>
-
     </header>
 
+    <hr>
     <!--Common navigation menu used across all pages-->
     <nav>
 
       <!--common nav bar to be placed in each .html file and the id="current_page_nav" to be put on the active page for styles in styles.css-->
-      <a href="index.html" target="_self" id="current_page_nav">Home</a>
-      <a href="about.html" target="_self">About Us</a>
-      <a href="jobs.html" target="_self">Jobs</a>
-      <a href="apply.html" target="_self">Applications</a>
+      <div class="nav_left">
+        <a href="index.html" target="_self" id="current_page_nav">Home</a>
+        <a href="about.html" target="_self">About Us</a>
+        <a href="jobs.html" target="_self">Jobs</a>
+        <a href="apply.html" target="_self">Applications</a>
+      </div>
 
-      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" >
         <input type="submit" name="search" id="submit">
-        <input type="url" placeholder="http://127.0.0.1:5500/index.html" size="100%">
+        <input type="url" placeholder="http://127.0.0.1:5500/index.html">
       </form>
 
     </nav>
+
+    <hr>
 
     <!--At least one table using cell merging and a search box with a button-->
     <main>
@@ -50,11 +59,30 @@
         Where you can get all the creative and office software you could need. Customized experience for your new solo endeavours or a one stop shop to kit out the whole office floor. We can supply what you need at a deal you won't need to cut in line for!
       </p>
 
+      <table>
+        <caption>Our Products</caption>
+        <tr>
+          <th>Bikes</th>
+          <th colspan="2">Parts</th>
+          <th>Decals</th>
+        </tr>
+        <tr>
+          <td><img src="images/bike.jpg" alt="Bike image"></td>
+          <td colspan="2"><img src="images/parts.jpg" alt="Parts image"></td>
+          <td><img src="images/Decals.jpg" alt="Decal image"></td>
+        </tr>
+      </table>
+
     </main>
+
+    <hr>
 
     <!--Jira, Github, fake Email links-->
     <footer>
 
+      <a href="https://harrietsb.atlassian.net/jira/software/projects/COEP1/boards/34" target="_self">Jira Project</a>
+      <a href="https://github.com/pave-unpaved/COS10026-Web-project-part-1" target="_self">Github Repo</a>
+      <a href="mailto:info@etron.com" target="_self">Email Us</a>
 
     </footer>
 

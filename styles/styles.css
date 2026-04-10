@@ -15,32 +15,29 @@ description: Co.Org.E Global stylesheet
 /* GFonts import for that awesome branding 
    I could have also done this in the HTML header but that's much less portable */
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Zen+Dots&display=swap');
-
-
 h1 {
   font-family: "Zen Dots", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 300%;
 }
-
 h2, th, strong {
   font-family: "Sansation", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-
 h3, h4 {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 * {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
 }
 
+
+/* Nav cluster styling using flex */
 nav {
   display: flex;
   flex-flow: row wrap;
@@ -56,17 +53,12 @@ nav {
   } 
   form {
     margin-left: auto;
+    justify-content: flex-end;
     
-    input [type=url] {
+    input[type=url] {
       min-width: 40em;
-      max-width: 100%;
     }
   }
-}
-
-.todo {
-  background-color: red;
-  color: white;
 }
 
 #current_page_nav {
@@ -74,4 +66,22 @@ nav {
   color: white;
 }
 
-about_html
+/* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
+@-moz-document url-prefix() {
+  input {
+    /* Don't ask me where i got that number from, it looks about right to me */
+    max-width: 38.5%;
+  }
+} 
+
+/* Common TODO class */
+.todo {
+  background-color: red;
+  color: white;
+}
+
+
+/* about.html */
+.box {
+  border-top: 5px solid grey;
+  }

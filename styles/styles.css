@@ -15,11 +15,17 @@ description: Co.Org.E Global stylesheet
    I could have also done this in the HTML header but that's much less portable */
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Zen+Dots&display=swap');
 
+/*changes the color variables based on the users browser appearance settings*/
 :root {
-  --text: #fbfbf4;
-  --background: #15001a;
-  --textlight: #f5e3d6;
+  --text: #15001a;
+  --background: #fbfbf4;
   --accent: #a5cbd9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fbfbf4;
+    --background: #15001a;
+  }
 }
 
 
@@ -51,7 +57,6 @@ h3, h4 {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
 }
-
 
 
 /* Nav cluster styling using flex */
@@ -91,6 +96,7 @@ footer {
   background-color: var(--accent);
   color: var(--text);
 }
+
 
 table {
   max-width: 100%;

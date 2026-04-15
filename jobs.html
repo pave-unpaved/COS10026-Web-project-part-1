@@ -2,15 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content= TODO >
-    <meta name="keywords" content= TODO >
-    <meta name="author" content= TODO >
+    <meta name="description" content= "Jobs we are offering">
+    <meta name="keywords" content= "Job, Offers, Work">
+    <meta name="author" content= "Kori Read">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Offers</title>
+  </head>
 
-    <h1>Job Offers</h1>
+  <body>
+      <!--Company logo, name, slogan, description, and image-->
+    <header>
+
+      <h1>E-Tron</h1>
+
+      <h4>
+        No Need to Cut in Line for these Cutting Edge Deals
+      </h4>
+
+    </header>
+
+    <hr>
+    <!--Common navigation menu used across all pages-->
+    <nav>
+
+      <!--common nav bar to be placed in each .html file and the id="current_page_nav" to be put on the active page for styles in styles.css-->
+      <div class="nav_left">
+        <a href="index.html" target="_self" id="current_page_nav">Home</a>
+        <a href="about.html" target="_self">About Us</a>
+        <a href="jobs.html" target="_self">Jobs</a>
+        <a href="apply.html" target="_self">Applications</a>
+      </div>
+
+      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" >
+        <input type="submit" name="search" id="submit">
+        <input type="url" placeholder="http://127.0.0.1:5500/index.html">
+      </form>
+
+    </nav>
+
+    <h2>Job Offers</h2>
       <section>
-        <h2>Front-End Web Developer</h2>
+        <h3><strong>Web Developer</strong></h3>
         <label>Reference Number: A7X3B</label>
         <h3>Job Description</h3>
         <p>We're looking for a skilled Front-End Web Developer responsible for designing and implementing responsive, 
@@ -55,7 +87,7 @@
       </section>
 
       <section>
-          <h2>Junior E-Commerce Support Assistant</h2>
+          <h3><strong>Junior E-Commerce Support Assistant</strong></h3>
           <label>Reference Number: B4K9D</label>
           <h3>Job Description</h3>
           <p>We're looking for a entry-level role supporting the day-to-day operations of an online retail platform, assisting with product listings, basic website updates, and customer-facing digital processes.</p>
@@ -95,5 +127,5 @@
           </ul>
         </section>
     <link rel="stylesheet" href="styles/styles.css">
-  </head>
+  </body>
 </html>

@@ -102,7 +102,17 @@ table {
   max-width: 100%;
 }
 
+aside {
+    border: 4px inset #a5cbd9;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    width: 25%;
+    float: right;
+    box-shadow: 10px 10px 5px #fbfbf4;
+}
 
+section {width: 30%;}
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
 @-moz-document url-prefix() {

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       d="M 9.9334594,471.47393 V 59.38245 H 265.93336 v 74.92573 H 67.480507 v 91.06357 H 502.06654 v 74.92572 H 67.480507 v 96.25074 H 265.93336 l 49.23121,74.9258 z"
+       id="text1"
+       style="font-size:192px;font-family:'Zen Dots';-inkscape-font-specification:'Zen Dots, Normal';white-space:pre;inline-size:177.914;stroke-width:2.37135"
+       aria-label="E" />
+    <path
+       style="font-size:201.717px;font-family:'Zen Dots';-inkscape-font-specification:'Zen Dots, Normal';stroke-width:2.65222"
+       d="m 329.89454,225.37176 q -17.49877,0 -25.74532,-13.8593 -8.24655,-14.1816 -8.24655,-37.06558 V 96.44805 H 265.93351 V 59.382466 h 29.96916 V 8.4575868 H 325.0673 V 59.382466 h 43.04295 V 96.44805 H 325.0673 v 72.19728 q 0,19.66085 12.06812,19.66085 h 36.60662 v 37.06558 z m 58.93281,0 V 59.382466 h 79.24732 q 17.49877,0 25.74532,14.181603 8.24655,13.859302 8.24655,36.743271 v 34.48709 h -29.56689 v -28.68552 q 0,-19.338559 -12.06812,-19.338559 H 418.39424 V 225.37176 Z"
+       id="text2"
+       aria-label="tr" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:231.632px;font-family:'Zen Dots';-inkscape-font-specification:'Zen Dots, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:2.41284"
+       x="373.01559"
+       y="327.81885"
+       id="text5"
+       transform="scale(0.69776235,1.4331527)"><tspan
+         id="tspan5"
+         x="373.01559"
+         y="327.81885"
+         style="stroke-width:2.41284">on</tspan></text>
+  </g>
+</svg>

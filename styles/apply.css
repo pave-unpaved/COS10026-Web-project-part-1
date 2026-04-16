@@ -1,46 +1,41 @@
 /*
 
-filename: jobs_styles.css
+filename: apply.css
 
 author: Ophelia Harris
 
 created: 7/04/2026
 
-Last modified: 7/04/2026
+Last modified: 14/04/2026
 
 description: Co.Org.E Global stylesheet
 
 */
-
-/* in progress theme switch and branding tests 
-:root {
-  --text: black;
-  --background: white;
-  --accent: #5dbaec;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: white;
-    --background: #1f3745;
-    --accent: #4f9ac3;
-  }
-}
-
 body {
-  margin: 0 0 1em 0;
-  color: var(--text);
-  background-color: var(--background);
-}
-h1 {
   margin: 0;
-  padding: 4px;
 }
 
 header {
-  background-image: linear-gradient(to bottom, var(--accent), var(--background));
+  min-width: 100%;
   margin: 0;
+  background-color: var(--accent);
 }
-*/
+
+.heading {
+  display: inline-flex;
+  
+  margin-left: 1%;
+  margin-top: 1%;
+
+
+  div {
+    * {
+      margin: 0 0 0 3%;
+    }
+    
+  }
+
+}
 
 /* Set the entire content of the page to be centred and 40em wide for comfy reading */
 main {
@@ -53,6 +48,8 @@ main {
 
 /* Form styled with grid */
 fieldset {
+  border-radius: 5px;
+  border-color: var(--accent);
   margin: 2em auto;
   display: grid;
   grid-template-columns: 50% 50%;

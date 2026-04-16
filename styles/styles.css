@@ -18,6 +18,7 @@ description: Co.Org.E Global stylesheet
 /*changes the color variables based on the users browser appearance settings*/
 :root {
   --text: #15001a;
+  --secondary: #3d3d3d;
   --background: #fbfbf4;
   --accent: #a5cbd9;
 }
@@ -31,7 +32,7 @@ description: Co.Org.E Global stylesheet
 
 /* Changing text */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--accent);
+  color: var(--text);
 }
 body {
   color: var(--text);
@@ -43,12 +44,18 @@ h1 {
   font-style: normal;
   font-size: 300%;
 }
-h2, th, strong {
+h2 {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 100%;
+}
+th, strong, h3 {
   font-family: "Sansation", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-h3, h4 {
+h4 {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -73,6 +80,8 @@ nav {
 
     a {
       margin: 0.5em;
+      color: var(--text);
+      text-decoration: none;
     }
   } 
 
@@ -86,8 +95,8 @@ nav {
   }
 
   #current_page_nav {
-    background-color: var(--background);
     color: var(--text);
+    text-decoration: underline;
   }
 }
 
@@ -131,3 +140,6 @@ section {width: 30%;}
 
 
 /* about.html */
+.box {
+  border-top: 5px solid grey;
+}

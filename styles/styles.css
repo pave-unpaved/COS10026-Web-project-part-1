@@ -161,8 +161,10 @@ aside {
 section {
   width: 30%;
   float: left;
-  padding: 2em;
+  padding-left: 2em;
 }
+
+.Offers {padding-left: 2em;}
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
 @-moz-document url-prefix() {

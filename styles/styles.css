@@ -160,6 +160,8 @@ aside {
 /* jobs is the only page to use section */
 section {
   width: 30%;
+  float: left;
+  padding: 2em;
 }
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */

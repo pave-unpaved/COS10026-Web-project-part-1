@@ -158,11 +158,13 @@ aside {
 }
 
 /* jobs is the only page to use section */
-section {
+
+.jobs-page section {
   width: 30%;
   float: left;
   padding-left: 2em;
 }
+
 
 .Offers {padding-left: 1.3em;
 font-size: 150%;}
@@ -176,7 +178,6 @@ font-size: 150%;}
 } 
 
 
-/* about.html */
-.box {
-  border-top: 5px solid grey;
-}
+
+
+

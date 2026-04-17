@@ -1,0 +1,109 @@
+/*Jay*/
+.about-page section {
+    max-width: 800px;
+    margin: 1.5em auto;
+    padding: 0.5em;
+}
+
+/* Definition list */
+.about-page dl dt {
+    font-weight: bold;
+    margin-top: 0.8em;
+}
+
+.about-page dl dd {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Group photo */
+.about-page figure {
+    border: 2px solid #a5cbd9;
+    padding: 0.5em;
+    max-width: 500px;
+}
+
+.about-page figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fun facts table */
+.about-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5em;
+}
+
+.about-page caption {
+    font-weight: bold;
+    margin-bottom: 0.4em;
+}
+
+.about-page th,
+.about-page td {
+    border: 1px solid #999;
+    padding: 0.4em;
+    text-align: left;
+}
+
+.about-page th {
+    background-color: #a5cbd9;
+}
+
+.about-page tr:hover {
+    background-color: #f0f0f0;
+}
+/*Social media*/
+
+.nav_right a {
+    margin-left: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.nav_right a:hover {
+    text-decoration: underline;
+}
+
+/* Specific brand colours on hover */
+
+.nav_right a[href*="facebook.com"]:hover {
+    color: #1877f2;
+}
+
+.nav_right a[href*="instagram.com"]:hover {
+    color: #e1306c;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+/* Right side social links */
+.nav_right {
+    display: flex;
+    gap: 1em;
+}
+
+.nav_right a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.nav_right a:hover {
+    text-decoration: underline;
+}
+
+/* Brand colour on hover */
+.nav_right a[href*="facebook.com"]:hover {
+    color: #1877f2;
+}
+
+.nav_right a[href*="instagram.com"]:hover {
+    color: #e1306c;
+}

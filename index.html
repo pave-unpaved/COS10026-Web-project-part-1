@@ -21,32 +21,36 @@
   <body>
     
     <!--Company logo, name, slogan, description, and image-->
-    <header style="background-image: url(images/VaporwaveBackground.jpg); background-repeat: no-repeat; background-size: cover;">
-
-      <h1>E-Tron</h1>
-
-      <h4>
-        No Need to Cut in Line for these Cutting Edge Deals
-      </h4>
-
-    </header>
-    <!--Common navigation menu used across all pages-->
-    <nav>
-
-      <!--common nav bar to be placed in each .html file and the id="current_page_nav" to be put on the active page for styles in styles.css-->
-      <div class="nav_left">
-        <a href="index.html" target="_self" id="current_page_nav">Home</a>
-        <a href="about.html" target="_self">About Us</a>
-        <a href="jobs.html" target="_self">Jobs</a>
-        <a href="apply.html" target="_self">Applications</a>
+    <header>
+      <div class="heading">
+        <img class="logo" src="./images/logo.svg" width="92" height="92" alt="E-Tron Logo"></img>
+        <div class="header_text">
+          <h1>E-Tron</h>
+          <h2>
+            No Need to Cut in Line for these Cutting Edge Deals
+          </h>
+        </div>
       </div>
 
-      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" >
-        <input type="submit" name="search" id="submit">
-        <input type="url" placeholder="http://127.0.0.1:5500/index.html">
-      </form>
+      <!--Common navigation menu used across all pages-->
+      <nav>
 
-    </nav>
+        <!--common nav bar to be placed in each .html file and the id="current_page_nav" to be put on the active page for styles in styles.css-->
+        <div class="nav_left">
+          <a href="index.html" target="_self" id="current_page_nav">Home</a>
+          <a href="about.html" target="_self">About Us</a>
+          <a href="jobs.html" target="_self">Jobs</a>
+          <a href="apply.html" target="_self">Applications</a>
+        </div>
+
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+          <input type="url" for="submit" placeholder="Search out site!" title="Search our site!">
+          <input type="submit" name="search" id="submit" value="Submit Query">
+        </form>
+
+      </nav>
+      <hr>
+    </header>
 
     <!--At least one table using cell merging and a search box with a button-->
     <main>

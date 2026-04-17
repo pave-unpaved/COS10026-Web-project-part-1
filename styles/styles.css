@@ -164,7 +164,8 @@ section {
   padding-left: 2em;
 }
 
-.Offers {padding-left: 2em;}
+.Offers {padding-left: 1.3em;
+font-size: 150%;}
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
 @-moz-document url-prefix() {

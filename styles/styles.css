@@ -112,7 +112,10 @@ aside {
     box-shadow: 10px 10px 5px #fbfbf4;
 }
 
-section {width: 30%;}
+section {width: 30%;
+  float: left;
+  padding: 2em;
+}
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
 @-moz-document url-prefix() {

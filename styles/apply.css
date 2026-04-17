@@ -6,36 +6,11 @@ author: Ophelia Harris
 
 created: 7/04/2026
 
-Last modified: 14/04/2026
+Last modified: 17/04/2026
 
 description: Co.Org.E Global stylesheet
 
 */
-body {
-  margin: 0;
-}
-
-header {
-  min-width: 100%;
-  margin: 0;
-  background-color: var(--accent);
-}
-
-.heading {
-  display: inline-flex;
-  
-  margin-left: 1%;
-  margin-top: 1%;
-
-
-  div {
-    * {
-      margin: 0 0 0 3%;
-    }
-    
-  }
-
-}
 
 /* Set the entire content of the page to be centred and 40em wide for comfy reading */
 main {

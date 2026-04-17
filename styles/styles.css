@@ -6,7 +6,7 @@ author:
 
 created: 27/03/2026
 
-Last modified: 31/03/2026
+Last modified: 17/04/2026
 
 description: Co.Org.E Global stylesheet
 
@@ -21,23 +21,62 @@ description: Co.Org.E Global stylesheet
   --secondary: #3d3d3d;
   --background: #fbfbf4;
   --accent: #a5cbd9;
+  --header: var(--accent);
 }
+/* Dark mode specific selectors to fix colors and the logo */
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #fbfbf4;
+    --secondary: #9d9d9d;
     --background: #15001a;
+    --accent: #4e84b3;
+    --header: #3f6281;
+  }
+  .logo {
+    filter: invert() brightness(0.99);
+  }
+}
+
+/* remove body padding */
+body {
+  margin: 0;
+}
+
+/* make the header and nav cluster all pretty */
+header {
+  min-width: 100%;
+  margin: 0;
+  background-color: var(--header);
+}
+.heading {
+  display: inline-flex;
+  
+  margin-left: 1%;
+  margin-top: 1%;
+
+  div {
+    * {
+      margin: 0 0 0 3%;
+    } 
   }
 }
 
 
-/* Changing text */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
-}
+/* unfortunately the second media selector does have to be here or the gradient invert doesn't work */
 body {
   color: var(--text);
   background: linear-gradient(var(--background), var(--accent));
 } 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(var(--accent), var(--background));
+  }
+}
+
+/* Changing text color and font */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
 h1 {
   font-family: "Zen Dots", sans-serif;
   font-weight: 700;
@@ -68,7 +107,7 @@ h4 {
 
 /* Nav cluster styling using flex */
 nav {
-  background-color: var(--accent);
+  background-color: var(--header);
   color: var(--background);
   display: flex;
   flex-flow: row wrap;
@@ -89,6 +128,7 @@ nav {
     margin-left: auto;
     justify-content: flex-end;
     
+    /* make the url box not be huge */
     input[type=url] {
       min-width: 40em;
     }
@@ -100,17 +140,13 @@ nav {
   }
 }
 
-
+/* foot styling */
 footer {
   background-color: var(--accent);
   color: var(--text);
 }
 
-
-table {
-  max-width: 100%;
-}
-
+/* aside for the jobs page */
 aside {
     border: 4px inset #a5cbd9;
     border-radius: 14px;
@@ -121,7 +157,10 @@ aside {
     box-shadow: 10px 10px 5px #fbfbf4;
 }
 
-section {width: 30%;}
+/* jobs is the only page to use section */
+section {
+  width: 30%;
+}
 
 /* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
 @-moz-document url-prefix() {
@@ -130,13 +169,6 @@ section {width: 30%;}
     max-width: 38.5%;
   }
 } 
-
-
-/* Common TODO class */
-.todo {
-  background-color: red;
-  color: white;
-}
 
 
 /* about.html */

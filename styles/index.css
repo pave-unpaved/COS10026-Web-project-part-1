@@ -1,0 +1,59 @@
+/*
+
+filename: index.css
+
+author: Harriet Stoneman-Banks
+
+created: 18/04/2026
+
+Last modified: 18/04/2026
+
+description: E-Tron Index.html Style Sheet
+
+*/
+
+/* centring content and increasing font size*/
+main {
+  display: flex; 
+  max-width: 40em;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* background image */
+#index_body {
+    background-image: url("/images/light_background_index.jpg");
+    background-size: cover;
+    background-position: 100%;
+}
+
+/* changes background image if the user has dark mode enabled */
+@media (prefers-color-scheme: dark) {
+    #index_body {
+        background-image: url("/images/dark_background_index.jpg");
+    }
+}
+
+/* adds a border to the table */
+th, td {    
+    padding: 1em;
+    border-color: var(--text);
+    border-style: solid;
+    border-width: 2;
+}
+
+/* adds spacing to list */
+li {
+    padding: .5em;
+}
+
+
+    /* puts footer to the bottom of the page */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

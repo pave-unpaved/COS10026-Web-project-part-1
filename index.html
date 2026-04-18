@@ -9,16 +9,16 @@
     <title>Home</title>
 
     <style>
-      table, th, td {
-        border-style: solid;
-        border-width: 2;
+      th {
+        background-color: #4e84b3;
       }
     </style>
 
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
+  <body id="index_body">
     
     <!--Company logo, name, slogan, description, and image-->
     <header>
@@ -52,26 +52,44 @@
       <hr>
     </header>
 
-    <!--At least one table using cell merging and a search box with a button-->
     <main>
 
       <p id="description">
-        Where you can get all the creative and office software you could need. Customized experience for your new solo endeavours or a one stop shop to kit out the whole office floor. We can supply what you need at a deal you won't need to cut in line for!
+        Where you can get all the motorbikes, bike accessories and parts could need. Customized experience for your new project or a one stop shop to kit out your whole crew. We can supply what you need at a deal you won't need to cut in line for!
       </p>
 
+      <!-- table showing the products and their shipping avaliability-->
       <table>
-        <caption>Our Products</caption>
+        <caption><h3>Our Products and Shipping</h3></caption>
         <tr>
+          <td style="empty-cells: hide;"></td>
           <th>Bikes</th>
-          <th colspan="2">Parts</th>
+          <th>Accessories</th>
+          <th>Parts</th>
           <th>Decals</th>
         </tr>
         <tr>
-          <td><img src="images/bike.jpg" alt="Bike image"></td>
-          <td colspan="2"><img src="images/parts.jpg" alt="Parts image"></td>
-          <td><img src="images/decals.jpg" alt="Decal image"></td>
+          <th>Outside of Australia</th>
+          <td>N/A</td>
+          <td rowspan="2">All Accessories</td>
+          <td>Parts totalling under a kilo</td>
+          <td rowspan="2">All Decals</td>
+        </tr>
+        <tr>
+          <th>Australia</th>
+          <td>All Bikes</td>
+          <td>All Parts</td>
         </tr>
       </table>
+
+      <!-- review section-->
+      <h3>Reviews</h3>
+
+      <ul>
+        <li><strong>9/10</strong> - Excellent service, was able to find all the parts I needed and arrived quickly!</li>
+        <li><strong>8/10</strong> - After struggling to work out what my bike needed to run smoothly again, a quick email to E-Tron gave a quicker solution and there were able to supply what I needed</li>
+        <li><strong>10/10</strong> - Knew exactly what I needed and their website was so easy to navigate I spent less than 5 minutes to order over 15 seperate parts!</li>
+      </ul>
 
     </main>
 

@@ -101,6 +101,10 @@ h4 {
   font-weight: 400;
 }
 
+main {
+  padding-bottom: 2em;
+}
+
 
 /* Nav cluster styling using flex */
 nav {

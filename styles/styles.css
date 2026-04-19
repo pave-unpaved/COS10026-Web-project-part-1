@@ -53,12 +53,9 @@ header {
   
   margin-left: 1%;
   margin-top: 1%;
-
-  div {
-    * {
-      margin: 0 0 0 3%;
-    } 
-  }
+}
+.heading div * {
+  margin: 0 0 0 3%;
 }
 
 
@@ -113,64 +110,59 @@ nav {
   flex-flow: row wrap;
   justify-content: flex-start;
   padding: .5%;
-
- .nav_left {
-    margin-right: 2em;
-
-    a {
-      margin: 0.5em;
-      color: var(--text);
-      text-decoration: none;
-    }
-  } 
-
-  form {
-    margin-left: auto;
-    justify-content: flex-end;
-    
-    /* make the url box not be huge */
-    input[type=url] {
-      min-width: 40em;
-    }
-  }
-
-  #current_page_nav {
-    color: var(--text);
-    text-decoration: underline;
-  }
+}
+nav .nav_left a { /* remove the visual underline from the links in the navbar, and set the spacing */
+  margin: 0.5em;
+  color: var(--text);
+  text-decoration: none;
+}
+nav form { /* move the search bar to the right */
+  margin-left: auto;
+  justify-content: flex-end;
+}
+nav form input[type=url] { /* make the url box not huge */
+  min-width: 40em;
+}
+nav #current_page_nav { /* underline the current page */
+  color: var(--text);
+  text-decoration: underline;
 }
 
-/* foot styling */
+/* footer styling */
 footer {
-  background-color: var(--accent);
+  background-color: var(--header);
+}
+footer a {
   color: var(--text);
+  margin: 0.5em;
 }
 
 /* aside for the jobs page */
 aside {
-    border: 4px inset #a5cbd9;
-    border-radius: 14px;
-    margin: 1em;
-    padding: 1em;
-    width: 25%;
-    float: right;
-    box-shadow: 10px 10px 5px #fbfbf4;
+  border: 4px inset #a5cbd9;
+  border-radius: 14px;
+  margin: 1em;
+  padding: 1em;
+  width: 25%;
+  float: right;
+  box-shadow: 10px 10px 5px #fbfbf4;
 }
 
 /* jobs is the only page to use section */
-
 .jobs-page section {
   width: 30%;
   float: left;
   padding-left: 2em;
 }
 
+.Offers {
+  padding-left: 1.3em;
+  font-size: 150%;
+}
 
-.Offers {padding-left: 1.3em;
-font-size: 150%;}
-
-/* Fix the way that firefox renders all the input boxes about 50% larger than chrome */
-@-moz-document url-prefix() {
+/* Fix the way that firefox renders all the input boxes about 50% larger than chrome. */
+/* the other way of selecting only firefox ( @-moz-document url-prefix() ) threw validation errors */
+@supports (-moz-appearance:none) {
   input {
     /* Don't ask me where i got that number from, it looks about right to me */
     max-width: 38.5%;

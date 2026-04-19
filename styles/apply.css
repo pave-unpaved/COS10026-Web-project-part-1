@@ -14,7 +14,7 @@ description: Co.Org.E Global stylesheet
 
 /* Set the entire content of the page to be centred and 40em wide for comfy reading */
 main {
-  display: flexbox;
+  display: block;
   max-width: 40em;
   width: 100%;
   justify-content: center;
@@ -30,30 +30,40 @@ fieldset {
   grid-template-columns: 50% 50%;
   justify-content: flex-start;
   width: 100%;
-  legend {
-    font-weight: 700;
-  }
-  input[type=email] { /* Stop Chrome-based browsers rendering the email input too small */
-    max-width: fit-content;
-    field-sizing: content;
-  }
-  .gender { /* Make the gender selection inline */
-    margin: 0;
-    max-width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .other { /* make the other skills box extend across the entire bottow row. */
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  textarea {
-    width: 30em;
-  }
 }
-.job_reference_number { /* taking this out of the grid required a selector with higher priority than the fieldset above */
-    display: inline;
-    margin: 0 auto;
+
+/* make the legends for each section visually bold. Not applied with <strong> as a screen reader will make sections clear already. */
+fieldset legend {
+  font-weight: 700;
+}
+
+/* make email input a consistent size across browsers */
+fieldset input[type=email] {
+  max-width: fit-content;
+  min-width: 60%;
+}
+
+/* Make the gender selection inline */
+fieldset .gender { 
+  margin: 0;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* make the other skills box extend across the entire bottow row. */
+fieldset .other { 
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+fieldset textarea {
+  width: 30em;
+}
+
+/* taking this out of the grid required a selector with higher priority than the fieldset above */
+.job_reference_number { 
+  display: inline;
+  margin: 0 auto;
 }
 

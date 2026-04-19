@@ -6,7 +6,7 @@ author: Harriet Stoneman-Banks
 
 created: 18/04/2026
 
-Last modified: 18/04/2026
+Last modified: 19/04/2026
 
 description: E-Tron Index.html Style Sheet
 
@@ -24,15 +24,15 @@ main {
 
 /* background image */
 #index_body {
-    background-image: url("/images/light_background_index.jpg");
+    background-image: url("../images/light_background_index.jpg");
     background-size: cover;
     background-position: 100%;
 }
 
 /* changes background image if the user has dark mode enabled */
 @media (prefers-color-scheme: dark) {
-    #index_body {
-        background-image: url("/images/dark_background_index.jpg");
+    & #index_body {
+        background-image: url("../images/dark_background_index.jpg");
     }
 }
 
@@ -41,7 +41,7 @@ th, td {
     padding: 1em;
     border-color: var(--text);
     border-style: solid;
-    border-width: 2;
+    border-width: 2px;
 }
 
 /* adds spacing to list */

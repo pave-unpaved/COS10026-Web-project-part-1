@@ -12,6 +12,7 @@ description: Co.Org.E Global stylesheet
 
 */
 
+
 /* Set the entire content of the page to be centred and 40em wide for comfy reading */
 main {
   display: block;
@@ -65,5 +66,37 @@ fieldset textarea {
 .job_reference_number { 
   display: inline;
   margin: 0 auto;
+}
+
+/* reduce the layout to 1 column for mobile */
+@media only screen and (max-width: 768px) {
+  main {
+    display: block;
+    max-width: 90%;
+    justify-content: center;
+  }
+
+  fieldset {
+    grid-template-columns: 90%;
+    max-width: 90%;
+  }
+  fieldset .gender {
+    max-width: 100%;
+  }
+  .skills {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 90%;
+  }
+  #other_skills {
+    display:inline;
+    max-width: min-content;
+  }
+  .job_reference_number {
+    display: flex;
+  }
+  .job_reference_number * {
+    padding: 0 3px;
+  }
 }
 

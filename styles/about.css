@@ -15,6 +15,20 @@
     margin-left: 1em;
     margin-bottom: 0.5em;
 }
+/* Styling student id */
+.about-page dt {
+    font-weight: bold;
+}
+
+.about-page dt {
+    margin-top: 0.6em;
+}
+``
+
+.about-page dt span {
+    color: #555555;
+    font-size: 0.9em;
+}
 
 /* Group photo */
 .about-page figure {
@@ -50,60 +64,7 @@
 .about-page th {
     background-color: #a5cbd9;
 }
-
+/* Add a hover effect to table rows for better interactivity */
 .about-page tr:hover {
     background-color: #f0f0f0;
-}
-/*Social media*/
-
-.nav_right a {
-    margin-left: 1em;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--background);
-}
-
-.nav_right a:hover {
-    text-decoration: underline;
-}
-
-/* Specific brand colours on hover */
-
-.nav_right a[href*="facebook.com"]:hover {
-    color: #1877f2;
-}
-
-.nav_right a[href*="instagram.com"]:hover {
-    color: #e1306c;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-}
-
-/* Right side social links */
-.nav_right {
-    display: flex;
-    gap: 1em;
-}
-
-.nav_right a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--background);
-}
-
-.nav_right a:hover {
-    text-decoration: underline;
-}
-
-/* Brand colour on hover */
-.nav_right a[href*="facebook.com"]:hover {
-    color: #1877f2;
-}
-
-.nav_right a[href*="instagram.com"]:hover {
-    color: #e1306c;
 }

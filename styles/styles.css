@@ -127,6 +127,18 @@ nav form { /* move the search bar to the right */
 nav form input[type=url] { /* make the url box not huge */
   min-width: 40em;
 }
+
+/* fix the search bar being too long on mobile */
+@media only screen and (max-width: 768px) { 
+  nav form {
+    margin-left: 0.5em;
+    justify-content: flex-start;
+  }
+  nav form input[type=url] { /* make the url box not huge */
+    min-width: 10em;
+  }
+}
+
 nav #current_page_nav { /* underline the current page */
   color: var(--text);
   text-decoration: underline;
